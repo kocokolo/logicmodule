@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script src="base.js" data-module="2.js,1.js"></script>
+    <script type="text/javascript">
+        //$B.modules.loadmoduls(["1.js"]);
+        $B.modules.loadjs("1.js");
+        $B.modules.use(["Test.C|1.js"], function () { alert(1)});
+    </script>
+</body>
+</html>
